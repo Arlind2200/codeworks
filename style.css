@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(98, 100, 176);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation-name: Phonebook;
+    animation-duration: 3s;
+  }
+  
+  @keyframes Phonebook {
+    from {background-color: rgb(255, 255, 255);}
+    to {background-color: rgb(98, 100, 176);}
+  }
+
+
+.container {
+    background-color: #c7c4e5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow:  10px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#search {
+    width:auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: #0048ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-contact{
+    margin-top: 10px ;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact{
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: rgb(30, 0, 255);
+    
+}
+.delete-contact:active { 
+    transform: scale(0.9); 
+} 
+
+
+#add-contact {
+    margin-top: 10px; /* Add some space at the top */
+    box-shadow:  5px 5px rgba(0, 0, 0, 0.5);  
+    background-color: rgb(30, 0, 255);
+    animation-name: example;
+    animation-duration: 2s;
+  }
+
+
+  #add-contact:active { 
+    transform: scale(0.9); 
+} 
+  
+  @keyframes example {
+    from {background-color: rgb(255, 255, 255);}
+    to {background-color: rgb(30, 0, 255);}
+  }
+
